@@ -1,0 +1,8 @@
+/* auth-layout.css */
+.Layout {
+    background-color: #333; /* Dark grey background color */
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    /* Add any styling specific to the authentication layout */
+  }

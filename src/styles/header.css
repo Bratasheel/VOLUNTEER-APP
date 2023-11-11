@@ -1,0 +1,30 @@
+/* header.css */
+.app-header {
+  background-color: #333; /* Dark grey background color */
+  color: #fff; /* White text color */
+  padding: 10px;
+  text-align: center; /* Center-align the content */
+}
+
+.logo a {
+  color: #fff; /* White color for the logo */
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center-align the navigation links */
+}
+
+.nav-links li {
+  margin-right: 15px;
+}
+
+.nav-links a {
+  color: #fff; /* White color for the navigation links */
+  text-decoration: none;
+  font-weight: bold;
+}

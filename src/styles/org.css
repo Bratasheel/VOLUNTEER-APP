@@ -1,0 +1,32 @@
+/* organization-list.css */
+.OrganisationList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .organization-card {
+    background-color: #0b0b0b; /* White background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+    text-align: center;
+    max-width: 300px; /* Adjust max-width based on your design */
+  }
+  
+  .organization-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .organization-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .organization-description {
+    color: #666; /* Dark grey color for description */
+  }
+  
