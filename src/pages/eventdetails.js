@@ -1,6 +1,6 @@
 // EventDetails.js
 import React from 'react';
-import EventList from '../components/EventList';
+import EventList from '../components/eventlists';
 
 const EventDetails = () => {
   return (

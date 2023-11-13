@@ -1,7 +1,7 @@
 // Header.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // If you are using React Router
-import '../styles/header.css'
+import { Link } from 'react-router-dom';
+import '../styles/header.css';
 
 const Header = () => {
   return (
@@ -12,13 +12,16 @@ const Header = () => {
       <nav>
         <ul className="nav-links">
           <li>
-            <Link to="/homepage">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/volunteerdashboard">Volunteers</Link>
+            <Link to="/volunteers">Volunteers</Link>
           </li>
           <li>
-            <Link to="/eventdetails">Events</Link>
+            <Link to="/events">Events</Link>
+          </li>
+          <li>
+            <Link to="/dashboard">Dashboard</Link>
           </li>
           {/* Add more navigation links as needed */}
         </ul>
