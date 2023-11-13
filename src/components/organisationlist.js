@@ -28,20 +28,27 @@ function OrganisationList() {
   return (
     <div>
       <h2>Organisation List</h2>
-        {organizations.map((org) => (
-          
-          <li key={org.organization_id}>
-            <div classname="organization-card">
-            <div classname="organization-name">
-            <h3>{org.organization_name}</h3>
-            <p classname="oranization-description">{org.description}</p>
+
+
+        <div className="organization-list">
+          {organizations.map((org) => (
+
+            <div className="organization-item">
+
+              <li key={org.organization_id}>
+                <div classname="organization-card">
+                  <div classname="organization-name">
+                    <h3>{org.organization_name}</h3>
+                    <p classname="oranization-description">{org.description}</p>
+                  </div>
+                </div>
+              </li>
+
             </div>
-            </div>
-            </li>
-            
-            
-             ))}
-             </div>
+        
+          ))}
+        </div>
+    </div>
   );
 }
 
