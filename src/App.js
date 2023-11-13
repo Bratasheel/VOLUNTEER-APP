@@ -15,10 +15,10 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" exact component={Home} />
-        <Route path="/dashboard" component={VolunteerDashboard} />
-        <Route path="/volunteers" component={VolunteerList} />
-        <Route path="/events" component={EventDetails} />
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/dashboard" element={<VolunteerDashboard/>} />
+        <Route path="/volunteers" element={<VolunteerList/>} />
+        <Route path="/events" element={<EventDetails/>} />
         {/* Add more routes for other pages */}
       </Routes>
       <Footer />
