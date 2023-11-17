@@ -22,22 +22,36 @@ li.nav-links {
     padding: 20px;
     display: flex;
     gap: 20px;
-    /* overflow: hidden; */
+    overflow-x: auto;   /* This will give horizontal scrolling feature for multiple organization-list cards */
+    /* white-space: nowrap; */
 }
 
 .organization-item {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 3px rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 6px;
-    /* min-width: 340px; */
     width: 400px;
     padding: 15px;    
 }
 
 .organization-item:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 6px rgba(0,0,0,0.2);
 }
 
-/* .organization-name {
-    text-align: center;
+/* Dashboard-content: */
+/* .dashboard-content{
+    padding-bottom: 150px;
 } */
+
+
+/* footer.css */
+.app-footer {
+    background-color: #333; /* Dark grey background color */
+    color: #fff; /* White text color */
+    padding: 1px;
+    text-align: center;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and borders in the total width and height */
+}

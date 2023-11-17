@@ -1,11 +1,1 @@
-/* footer.css */
-.app-footer {
-  background-color: #333; /* Dark grey background color */
-  color: #fff; /* White text color */
-  padding: 1px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  box-sizing: border-box; /* Include padding and borders in the total width and height */
-}
+
