@@ -12,8 +12,7 @@ function EventList() {
   useEffect(() => {
     async function fetchEvents() {
       // Fetch user data from the Users table
-      const { data, error } = await supabase.from("events").select("*");
-
+      const { data, error } = await supabase.from('events').select('*, organizations("*")');
       if (error) {
         console.error('Error fetching users:', error);
       } else {
@@ -30,9 +29,11 @@ function EventList() {
       <ul>
         {events.map((event) => (
           <li key={event.event_id}>
-            <h3>{event.name}</h3>
-            <h3>{event.description}</h3>
-            <h3>{event.location}</h3>
+            <p><h3>{event.event_name}</h3>
+            Associated Org : <strong>{event.organizations.organization_name}</strong><br/>
+           Desc: {event.description} <br/>
+            
+           Location: {event.location}</p>
             </li>
         ))}
       </ul>

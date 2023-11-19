@@ -26,12 +26,12 @@ function VolunteerList() {
 
   return (
     <div>
-      <h2>Volunteer List</h2>
       <ul>
         {volunteers.map((volunteer) => (
           <li key={volunteer.volunteer_id}>
-            {volunteer.first_name}
-            {volunteer.last_name}
+            <p>{volunteer.first_name} {volunteer.last_name} :<br/>
+            Skills :{volunteer.skills} <br/>
+            Address :{volunteer.address}</p>
 
             </li>
         ))}

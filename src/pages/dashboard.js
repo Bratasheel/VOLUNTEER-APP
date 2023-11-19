@@ -3,7 +3,7 @@ import React from 'react';
 import VolunteerList from '../components/Volunteers';
 import OrganisationList from '../components/organisationlist';
 
-const VolunteerDashboard = () => {
+const Dashboard = () => {
   return (
     <div>
       <section className="dashboard-header">
@@ -28,4 +28,4 @@ const VolunteerDashboard = () => {
   );
 };
 
-export default VolunteerDashboard;
+export default Dashboard;
