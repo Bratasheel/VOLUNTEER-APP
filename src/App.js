@@ -9,6 +9,7 @@ import Home from './pages/homepage';
 import Dashboard from './pages/dashboard';
 import Volunteer from './pages/volunteer';
 import EventDetails from './pages/eventdetails';
+import OrgForm from './pages/OrgForm';
 import Footer from './components/footer'
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/volunteers" element={<Volunteer />} />
         <Route path="/events" element={<EventDetails/>} />
+        <Route path="/form/:organizationId" element={<OrgForm />} />
         <Route path="/layout" element={<Layout/>} />
         {/* Add more routes for other pages */}
       </Routes>
