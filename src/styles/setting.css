@@ -1,0 +1,47 @@
+/* Settings.css (Update the existing CSS file or create a new one) */
+
+.settings-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000; /* Ensure it appears on top of other elements */
+  }
+  
+  .settings-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .settings-form label {
+    margin-bottom: 10px;
+  }
+  
+  .settings-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  .settings-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .settings-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .settings-form input {
+      font-size: 14px;
+    }
+  }
+  
