@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import EventList from '../components/eventlists';
-import RegistrationForm from '../components/registrationform';
+import { Link } from 'react-router-dom';
 import { supabase } from '../lib/supabase'; // Assuming you have a supabase.js file with supabase client setup
 
 const EventDetails = () => {
@@ -34,7 +34,11 @@ const EventDetails = () => {
         <p><strong>Explore and participate in upcoming events.</strong></p>
         <div className="registration-section">
           <h3>Event Registration</h3>
-          <RegistrationForm events={events} onRegister={handleRegistration} />
+          <p>Register to participate in the below events!</p><a href="https://forms.gle/FpvHyD7Cn137Bc698" target="_blank" rel="noreferrer">
+        Register
+      </a>{" "}
+      <br />
+      <br />
         </div>
       </section>
       <section className="event-details-content">

@@ -15,7 +15,11 @@ const Volunteer = () => {
 
         <section className="volunteer-header">
           <h1>Not Registered !</h1>
-          <p><h3>Register for events here <Link to="/events">Events</Link></h3></p>
+          <p>Register for volunteers here <a href="https://forms.gle/2pMAJueQsNG6yXNx7" target="_blank" rel="noreferrer">
+        Register
+      </a>{" "}
+      <br />
+      <br /></p>
         </section>
       </div>
     );
