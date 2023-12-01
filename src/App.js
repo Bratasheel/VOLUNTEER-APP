@@ -9,7 +9,6 @@ import Home from './pages/homepage';
 import UserRetractableSidebar from './pages/userbar';
 import Volunteer from './pages/volunteer';
 import EventDetails from './pages/eventdetails';
-import OrgForm from './pages/OrgForm';
 import Footer from './components/footer'
 import Settings from './components/setting';
 import UserProfile from './components/userprof';
@@ -23,7 +22,7 @@ const App = () => {
         <Route path="/users" element={<UserRetractableSidebar />} />
         <Route path="/volunteers" element={<Volunteer />} />
         <Route path="/events" element={<EventDetails/>} />
-        <Route path="/form/:organizationId" element={<OrgForm />} />
+        {/* <Route path="/form/:organizationId" element={<OrgForm />} /> */}
         <Route path="/layout" element={<Layout/>} />
         <Route path="/setting" element={<Settings/>} />
         <Route path="profile" element={<UserProfile/>} />
