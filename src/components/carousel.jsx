@@ -7,7 +7,7 @@ const CarouselSection = () => {
         <div>
 
             <section className="carousel-section">
-                <Carousel autoPlay infiniteLoop showArrows={false} showThumbs={false} interval={5000} transitionTime={2000} showStatus={false} showIndicators={false}>
+                <Carousel autoPlay infiniteLoop showArrows={false} showThumbs={false} interval={4000} transitionTime={2000} showStatus={false} showIndicators={false}>
                 <div>
                     <img src="images/volunteer1.jpeg" alt="Image 1" />
                 </div>

@@ -28,7 +28,7 @@ function OrganisationList() {
 
   return (
     <div>
-      <h2>Organisation List</h2>
+      {/* <h2>Organisation List</h2> */}
 
 
         <div className="organization-list">

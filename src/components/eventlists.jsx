@@ -26,17 +26,27 @@ function EventList() {
   return (
     <div>
       <h2>Events List</h2>
-      <ul>
-        {events.map((event) => (
-          <li key={event.event_id}>
-            <p><h3>{event.event_name}</h3>
-            Associated Org : <strong>{event.organizations.organization_name}</strong><br/>
-           Desc: {event.description} <br/>
-            
-           Location: {event.location}</p>
-            </li>
-        ))}
-      </ul>
+      
+      <div className="event-list">
+
+          <ul className='event-cards'>
+            {events.map((event) => (              
+                <li key={event.event_id} className='event-item'>
+                  {/* <div className='event-card' style={{backgroundImage: `url(images/${event.organizations.organization_name.replace(/\s+/g,'-')}1.jpg)`,}}> */}
+                  <div className='event-card'>
+                    <h3>{event.event_name}</h3>
+                    <p>Associated Org : <strong>{event.organizations.organization_name}</strong><br/>
+                    Desc: {event.description} <br/>
+                    
+                  Location: {event.location}</p>
+
+                  </div>
+                  </li>
+              
+            ))}
+          </ul>
+
+      </div>
     </div>
   );
 }
