@@ -26,7 +26,7 @@ const App = () => {
         <Route path="/form/:organizationId" element={<OrgForm />} />
         <Route path="/layout" element={<Layout/>} />
         <Route path="/setting" element={<Settings/>} />
-        <Route path="profile" element={<UserProfile/>} />
+        <Route path="/profile" element={<UserProfile/>} />
         {/* Add more routes for other pages */}
       </Routes>
       <Footer />
