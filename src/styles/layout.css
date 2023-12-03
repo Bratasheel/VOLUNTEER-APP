@@ -1,8 +1,78 @@
-/* auth-layout.css */
-.Layout {
-    background-color: #333; /* Dark grey background color */
-    padding: 20px;
-    margin-bottom: 20px;
-    color: #fff;
-    /* Add any styling specific to the authentication layout */
+/* Add these styles to your existing layout.css or create a new file */
+
+.layout-container {
+  position: relative;
+}
+
+.login-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%; /* Adjust the height as needed */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(8px); /* Blur the background */
+}
+
+.login-popup {
+  background-color: #333; /* Dark background color */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff; /* Text color */
+  max-width: 300px; /* Adjust the maximum width as needed */
+  width: 100%;
+  margin: 50px auto; /* Center the login pop-up horizontally with top and bottom margins */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box-shadow for depth */
+}
+
+.login-popup h2 {
+  margin-bottom: 20px;
+}
+
+.login-popup input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #555; /* Border color */
+  border-radius: 4px;
+  background-color: #444; /* Input background color */
+  color: #fff; /* Input text color */
+}
+
+.login-popup button {
+  width: 100%;
+  padding: 10px;
+  background-color:#386f3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-popup button:hover {
+  background-color: #386f3c;
+}
+
+/* Optional: Add a fade-in animation for the login popup */
+.login-popup {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply styles when the user is logged in to hide the login popup */
+.logged-in .login-popup-overlay {
+  display: none;
+}
