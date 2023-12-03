@@ -1,12 +1,15 @@
 // Home.js
 import React from 'react';
+import CarouselSection from '../components/carousel';
 import OrganisationList from '../components/organisationlist';
 
 const Home = () => {
   return (
     <div>
+      <CarouselSection/>
+
       <section className="hero-section">
-        <h1>Welcome to the Volunteer App</h1>
+        <h1>Volunteer For India Impact</h1>
         <p>Empowering volunteers for positive change.</p>
       </section>
 
