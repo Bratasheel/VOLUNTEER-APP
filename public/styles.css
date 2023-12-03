@@ -26,6 +26,14 @@ li.nav-links {
     /* white-space: nowrap; */
 }
 
+.organization-card img {
+    max-width: 100%;
+    height: 290px;
+    width: 350px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 .organization-item {
     box-shadow: 0 4px 8px 3px rgba(0,0,0,0.2);
     transition: 0.3s;
