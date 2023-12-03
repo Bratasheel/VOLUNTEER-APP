@@ -26,6 +26,11 @@ li.nav-links {
     /* white-space: nowrap; */
 }
 
+.organization-card a {
+    text-decoration: none;
+    color: #111;
+}
+
 .organization-card img {
     max-width: 100%;
     height: 290px;
