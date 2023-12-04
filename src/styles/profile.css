@@ -1,31 +1,79 @@
-/* UserProfile.css (Update the existing CSS file or create a new one) */
+/* profile.css */
 
 .user-profile-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    z-index: 1000; /* Ensure it appears on top of other elements */
-  }
-  
-  .user-profile-image {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .user-profile-details {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  @media (max-width: 600px) {
-    .user-profile-details {
-      font-size: 16px;
-    }
-  }
-  
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+  background-color: #f8f8f8; /* Light gray background */
+}
+
+.user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Increased shadow */
+}
+
+.user-details {
+  text-align: center;
+  color: #333;
+}
+
+.user-name {
+  margin: 10px 0 5px;
+  font-size: 1.5em;
+  color: #1565c0; /* Dark blue */
+}
+
+.user-username {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.user-bio,
+.user-age,
+.user-location,
+.user-causes {
+  color: #555;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stat {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #e0e0e0; /* Light gray */
+  margin: 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+.user-causes {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.user-causes strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #1565c0; /* Dark blue */
+}
+
+.user-causes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-causes li {
+  color: #555;
+}
