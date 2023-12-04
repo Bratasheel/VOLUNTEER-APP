@@ -74,7 +74,7 @@
   /* margin-top: 10px; */
   /* margin-bottom: 20px; */
   /* border-radius: 10px; */
-  border-top: 5px solid #04d9ff;
+  /* border-top: 5px solid #04d9ff; */
 }
 
 
@@ -91,29 +91,28 @@
   outline: none;
 } */
 
-
 .sidebar a {
   text-decoration: none;
   color: #fff;
 }
 
-.sidebar ul {
+/* .sidebar ul {
   list-style: none;
   padding: 0px;
-}
+} */
 
-.sidebar li {
-  padding:10px 75px 10px 20px;
-}
+/* .sidebar li {
+  padding:10px 92px 10px 20px;
+  /* width: 100%;
+} */
 
-.sidebar li:hover {
+/* .sidebar li:hover {
   background-color: #555;
-}
+} */
 
-.sidebar svg {
-  padding-right: 20px;
-  /* color: #fff; */
-}
+/* svg {
+  padding-right: 10px;
+} */
 
 /* UserProfile and UserSettings Component Styles (Add your styles here) */
 /* .sidebar-section {
@@ -123,3 +122,16 @@
 .sidebar-section h3 {
   margin-bottom: 10px;
 } */
+
+.dropdown-menu {
+  width: 160px;
+}
+
+.dropdown-item{
+  padding: 5px;
+}
+
+
+.dropdown-toggle::after { 
+  content: none; 
+}
