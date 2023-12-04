@@ -10,7 +10,7 @@ const UserRetractableSidebar = ({ isOpen, onClose }) => {
         &times;
       </button>
       <div className="sidebar-content">
-        <Link to="/profile">User Profile</Link>
+        <Link to="/profile">Profile</Link>
         <Link to="/setting">Settings</Link>
         <Link to="/signin">Sign In</Link>
       </div>
