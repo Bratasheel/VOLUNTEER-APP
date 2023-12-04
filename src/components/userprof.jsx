@@ -9,7 +9,7 @@ const UserProfile = () => {
     username: 'R.Singh',
     age: 24,
     image: 'images/default.png',
-    location: 'City, Country',
+    location: 'Delhi, India',
     completedTasks: 10,
     hoursServed: 50,
     causes: ['Education', 'Environment', 'Health'],
