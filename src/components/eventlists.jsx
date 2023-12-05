@@ -26,25 +26,25 @@ function EventList() {
   return (
     <div>
       <h2>Events List</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div className="row row-cols-1 row-cols-md-3 g-4">
 
       {events.map((event) => ( 
         
-        <div class="col" key={event.event_id}>
-          <div class="card" >
-              <div class="card-body">
+        <div className="col" key={event.event_id}>
+          <div className="card" >
+              <div className="card-body">
                 <div className="accordion accordion-flush" id={`accordionFlushExample-${event.event_id}`}>
               <div className="accordion-item">
                 <h2 className="accordion-header">
                   <button className="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target={`#flush-collapse-${event.event_id}`} aria-expanded="false" aria-controls={`flush-collapse-${event.event_id}`} 
-                  style={{ backgroundImage: `url(images/${event.organizations.organization_name.replace(/\s+/g, '-')}.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',}}>
+                  style={{ backgroundImage: `url(images/${event.event_name.replace(/\s+/g, '-')}.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',}}>
                     <h3>{event.event_name}</h3>
                   </button>
                 </h2>
                 <div id={`flush-collapse-${event.event_id}`} className="accordion-collapse collapse" data-bs-parent={`#accordionFlushExample-${event.event_id}`}>
                   <div className="accordion-body">
                     <p>Associated Org : <strong>{event.organizations.organization_name}</strong><br/>
-                    Desc: {event.description} <br/>
+                    Desc: <i>{event.description}</i><br/>
                     Location: {event.location}</p>
                   </div>
                 </div>

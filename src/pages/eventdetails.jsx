@@ -29,7 +29,7 @@ const EventDetails = () => {
   };
 
   return (
-    <div>
+    <div className='event-div'>
       <section className="event-details-header">
         <p><strong>Explore and participate in upcoming events.</strong></p>
         <div className="registration-section">

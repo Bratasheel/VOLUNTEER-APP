@@ -77,11 +77,15 @@ li.nav-links {
 
 /* Carousel Section */
 .carousel-section img{
-    height: 650px;
+    /* height: 650px; */
     filter: grayscale(70%);
 }
 
 /* ..................   Eventlists   ............................... */
+
+.event-div {
+    margin: 20px;
+}
 
 .accordion-button {
     height: 200px;
